@@ -11,5 +11,6 @@ namespace lemonade_stand
         public decimal PricePerCup { get; set; }
         public decimal CostPerCup { get; set; }
 
+
     }
 }
