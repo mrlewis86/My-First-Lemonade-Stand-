@@ -23,6 +23,8 @@ namespace lemonade_stand
 
                 Console.WriteLine();
 
+                
+
                 Console.WriteLine("How many cups do you plan to sell?");
                 Console.WriteLine();
                 lemonadeStand.NumberofCups = Int32.Parse(Console.ReadLine());
@@ -41,8 +43,8 @@ namespace lemonade_stand
                 Console.WriteLine("Each cup cost me " + lemonadeStand.CostPerCup + " for sugar, water, and crap");
                 Console.WriteLine();
 
-                decimal totalRevenue = lemonadeStand.NumberofCups * lemonadeStand.CostPerCup;
-                decimal totalExpenses = lemonadeStand.PricePerCup * lemonadeStand.CostPerCup;
+                decimal totalRevenue = lemonadeStand.TotalRevenue();
+                decimal totalExpenses = lemonadeStand.NumberofCups * lemonadeStand.CostPerCup;
                 decimal totalProfit = totalRevenue - totalExpenses;
 
                 Console.WriteLine("Your total revenue will be " + totalRevenue);
