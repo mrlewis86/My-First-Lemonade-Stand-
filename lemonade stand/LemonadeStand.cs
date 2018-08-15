@@ -15,5 +15,15 @@ namespace lemonade_stand
         {
             return NumberofCups * PricePerCup;
         }
+
+        public decimal TotalExpenses()
+        {
+            return NumberofCups * CostPerCup;
+        }
+
+        public decimal TotalProfit()
+        {
+            return TotalRevenue() - TotalExpenses();
+        }
     }
 }
