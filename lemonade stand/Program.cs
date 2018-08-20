@@ -56,7 +56,8 @@ namespace lemonade_stand
 
                 Console.ReadLine();
             }
-            Console.WriteLine("Your grand total will be " + corp.GetTotalRevenue());
+            //interpolation
+            Console.WriteLine($"Your grand total will be {corp.GetTotalRevenue()}");
             Console.WriteLine("Your total expenses will be " + corp.GetTotalExpenses());
             Console.WriteLine("Your total profit will be " + corp.GetTotalProfit());
 
